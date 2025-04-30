@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Expense {
+  id: Int!
+  title: String!
+  amount: Float!
+  date: String!
+}
+
+type Query {
+  getAllExpenses: [Expense!]!
+}
+
+type Mutation {
+  addExpense(createExpenseInput: CreateExpenseInput!): Expense!
+}
+
+input CreateExpenseInput {
+  title: String!
+  amount: Float!
+  date: String!
+}
